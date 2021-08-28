@@ -20,7 +20,7 @@ describe("readJSON testing", () => {
   beforeAll(() => {
     // populate the memory wth some topologies
     disposableTops.push(readJSON("samples/topology1.json"));
-    disposableTops.push(readJSON("samples/topology1.json"));
+    disposableTops.push(readJSON("samples/topology2.json"));
   });
   afterAll(() => {
     for (let top of disposableTops) {
@@ -113,8 +113,8 @@ describe("writeJSON", () => {
     disposableTops = [];
   });
   test("test writeJSON returns success", () => {
-    let res = writeJSON(disposableTops[0].data.id);
+    let res = writeJSON(disposableTops[1].data.id);
     expect(res.status).toBe(Status.SUCCESS);
-    expect(res.data.id).toBe(disposableTops[0].data.id);
+    expect(res.data.id).toBe(disposableTops[1].data.id);
   });
 });
