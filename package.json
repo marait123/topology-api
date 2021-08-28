@@ -1,0 +1,23 @@
+{
+  "name": "topology-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marait123/topology-api.git"
+  },
+  "author": "mohammed ibrahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marait123/topology-api/issues"
+  },
+  "homepage": "https://github.com/marait123/topology-api#readme",
+  "devDependencies": {
+    "jest": "^27.1.0",
+    "jsdoc": "^3.6.7"
+  }
+}
