@@ -9,7 +9,7 @@ const Status = {
   SUCCESS: 1,
 };
 
-/** @class Circle representing a circle. */
+/** @class Result representing a result. */
 class Result {
   /**
    * Creates an instance of Result
@@ -83,7 +83,7 @@ exports.writeJSON = (topologyId) => {
 /**
  * returns all the topologies there are in memory
  *
- * @return {Array<Topology>} the result object that has a status and data properties .
+ * @return {Array<Topology>} the array of topologies found in memory.
  */
 exports.queryTopologies = () => {
   return topologies;
@@ -106,10 +106,10 @@ exports.deleteTopology = (topologyId) => {
 };
 
 /**
- * this function returns the array of devices found on a givent topology
+ * this function returns the array of devices found on a given topology (topology with id = topologyId)
  *
  * @param {string} topologyId the id of the topology object
- * @return {Array<Device>} an array of Device object
+ * @return {Array<Device>} an array of Device objects
  */
 exports.queryDevices = (topologyId) => {
   let topology = getTopology(topologyId);
@@ -121,12 +121,12 @@ exports.queryDevices = (topologyId) => {
 };
 
 /**
- * this function returns the array of devices found on the topology with topologyId as its id parameter
+ * this function returns the array of devices found on the topology with topologyId as its id property
  * returns those devices that has node with id nodeId
  *
  * @param {string} topologyId the id of the topology object
  * @param {string} nodeId the id of node
- * @return {Array<Device>} an array of Device object
+ * @return {Array<Device>} an array of Device objects
  */
 exports.queryDevicesWithNetlistNode = (topologyId, nodeId) => {
   let top = getTopology(topologyId);
