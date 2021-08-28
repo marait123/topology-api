@@ -27,6 +27,7 @@ as it is obvious this code is written in javascript , uses jsdoc for documentati
 # Testing
 * before you run the test you need to make sure there is a samples folder if not u can run the generate_samples.ps1 script to generate them from topology.json file
 * to test this code you need to run the command `npm run test`
+![ testing image ](https://github.com/marait123/topology-api/blob/main/images/testing.JPG)
 
 # Documentation
 * the documentation is generated using jsdoc
