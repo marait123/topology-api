@@ -1,7 +1,8 @@
 # topology-api
 this is code is inteneded to be used as a library nevertheless I have provided index.js
 you can use to explore the the api functionarlity
-
+# why use javascript 
+1. It is an OOP language
 # project Structure
     .
     ├── api                   # this folder includes the api classes and functions
