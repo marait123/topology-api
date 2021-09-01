@@ -3,6 +3,7 @@ this is code is inteneded to be used as a library nevertheless I have provided i
 you can use to explore the the api functionarlity
 # why use javascript 
 1. It is an OOP language
+2. It is easy to work with JSONs
 # project Structure
     .
     ├── api                   # this folder includes the api classes and functions
